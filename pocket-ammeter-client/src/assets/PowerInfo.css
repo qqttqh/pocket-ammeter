@@ -1,0 +1,224 @@
+/* 应用于小屏幕（宽度小于600px） */
+@media screen and (max-width: 600px) {
+    .container {
+        position: relative;
+        background-color: #262827;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .main h1 {
+        color: white;
+    }
+
+    /* 分割线 */
+    .main hr.dashed {
+        border: none;
+        border-top: 2px dashed #fff;
+        height: 0;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    /* 余额部分 */
+    .main .balance-container {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    .main .balance-container .balance-item div:nth-child(1) {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .main .balance-container .balance-item input {
+        display: inline-block;
+        background: none;
+        border: none;
+        width: .6em;
+        height: 1em;
+        font-size: 1.2em;
+        text-align: center;
+        color: #fff;
+        padding: 0;
+        vertical-align: baseline;
+    }
+
+    /* 电量部分 */
+
+    .main .power-container {
+        margin-top: 20px;
+    }
+
+    .main .power-container .dormitory-number {
+        text-align: center;
+    }
+
+    .main .power-container .power-data-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main .power-container .power-data-container .data-item {
+        margin: 8px 2px;
+        width: 34px;
+        height: 34px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        line-height: 34px;
+        font-size: 1.5em;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+
+    .main .power-container .power-data-container .data-item:nth-last-child(-n+3) {
+        background-color: #28d875;
+    }
+
+    .main .power-container .update-time {
+        text-align: center;
+    }
+
+    /* 按钮部分 */
+    .main .button-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    .main .button-container button {
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 2em;
+        font-weight: 600;
+        color: #000;
+    }
+}
+
+/* 应用于大屏幕（宽度大于600px） */
+@media screen and (min-width: 601px) {
+    .container {
+        position: relative;
+        background-color: #262827;
+        width: 601px;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .main h1 {
+        color: white;
+    }
+
+    /* 分割线 */
+    .main hr.dashed {
+        border: none;
+        border-top: 2px dashed #fff;
+        height: 0;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    /* 余额部分 */
+    .main .balance-container {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    .main .balance-container .balance-item div:nth-child(1) {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .main .balance-container .balance-item input {
+        display: inline-block;
+        background: none;
+        border: none;
+        width: .6em;
+        height: 1em;
+        font-size: 1.2em;
+        text-align: center;
+        color: #fff;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    /* 电量部分 */
+
+    .main .power-container {
+        margin-top: 20px;
+    }
+
+    .main .power-container .dormitory-number {
+        text-align: center;
+    }
+
+    .main .power-container .power-data-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main .power-container .power-data-container .data-item {
+        margin: 8px 3px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        line-height: 40px;
+        font-size: 1.5em;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+
+    .main .power-container .power-data-container .data-item:nth-last-child(-n+3) {
+        background-color: #28d875;
+    }
+
+    .main .power-container .update-time {
+        text-align: center;
+    }
+
+    /* 按钮部分 */
+    .main .button-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    .main .button-container button {
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 2em;
+        font-weight: 600;
+        color: #000;
+    }
+}

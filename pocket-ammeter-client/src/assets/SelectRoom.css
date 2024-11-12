@@ -1,0 +1,160 @@
+/* 应用于小屏幕（宽度小于600px） */
+@media screen and (max-width: 600px) {
+    .container {
+        background-color: #262827;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .main hr.dashed {
+        border: none;
+        border-top: 2px dashed #fff;
+        height: 0;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .main h1 {
+        color: white;
+    }
+
+    .main .select-container {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .main .select-container select {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 120px;
+        height: 120px;
+        border: none;
+        margin: 10px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 600;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        text-align-last: center;
+        color: #000;
+    }
+
+    .main .select-container select:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .main .select-container select option {
+        text-align: center;
+    }
+
+    .main .button-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    .main .button-container button {
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 2em;
+        font-weight: 600;
+        color: #000;
+    }
+}
+
+/* 应用于大屏幕（宽度大于600px） */
+@media screen and (min-width: 601px) {
+    .container {
+        background-color: #262827;
+        width: 601px;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        border-radius: 20px;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .main hr.dashed {
+        border: none;
+        border-top: 2px dashed #fff;
+        height: 0;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .main h1 {
+        color: white;
+    }
+
+    .main .select-container {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .main .select-container select {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 120px;
+        height: 120px;
+        border: none;
+        margin: 10px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 600;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        text-align-last: center;
+        color: #000;
+    }
+
+    .main .select-container select:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .main .select-container select option {
+        text-align: center;
+    }
+
+    .main .button-container {
+        display: flex;
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    .main .button-container button {
+        width: 300px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 2em;
+        font-weight: 600;
+        color: #000;
+    }
+
+}
